@@ -46,7 +46,7 @@ main {
     font-weight: 400;
     font-size: 0.9rem;
 
-    width: 30rem;
+    max-width: 30rem;
     margin: 0;
 }
 
@@ -99,13 +99,27 @@ main {
 
     line-height: 1.1rem;
 
-    box-shadow: 0rem 0.1rem 4rem 1rem hsla(0, 0%, 91%, 0.3);
+    box-shadow: 0 20px 20px 7px hsl(229, 6%, 66%, 0.2), 0 20px 20px -10px hsl(212, 86%, 64%, 0.2);
+
+    color: hsl(234, 12%, 34%);
+}
+
+.card > h3 {
+    font-weight: 600;
 }
 
 .card > p {
     font-size: 0.82rem;
-    color: hsl(234, 12%, 34%);
 }
+
+
+.card-image-div {
+    margin-top: 3rem;
+
+    text-align: right;
+}
+
+
 
 .supervisor {
     border-top: 0.15rem solid hsl(180, 62%, 55%);
@@ -122,4 +136,30 @@ main {
 
 .calculator {
     border-top: 0.15rem solid hsl(212, 86%, 64%);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1150px) {
+    .card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text-section {
+        width: 90%;
+    }
+
+    .card-section {
+        width: 90%;
+    }
+
+    .left .center .right {
+        width: 100%;
+    }
 }
