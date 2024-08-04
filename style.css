@@ -144,13 +144,13 @@ main {
 
 @media screen and (max-width: 1150px) {
     main {
-        height: fit-content;
-        padding: 6rem 0rem;
+        height: 100%
+        padding: 2rem 0rem;
     }
     .card-section {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 }
 
