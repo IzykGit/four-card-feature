@@ -143,6 +143,9 @@ main {
 
 
 @media screen and (max-width: 1150px) {
+    main {
+        padding: 5rem 0rem
+    }
     .card-section {
         flex-direction: column;
         align-items: center;
